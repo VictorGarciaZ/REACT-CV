@@ -1,0 +1,7 @@
+.container-education{
+    display:flex;
+}
+
+.education{
+    border-radius: 2px black;
+}
