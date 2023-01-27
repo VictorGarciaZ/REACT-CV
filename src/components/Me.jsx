@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Me.css";
 
-const Me = ({ me }) => {
+const Me = () => {
+  const { me } = useSelector(state => state.me);
+  
   return (
     <div className="me">
       <img src={me.image} alt="fotocv" />

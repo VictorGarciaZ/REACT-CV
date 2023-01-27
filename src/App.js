@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -6,17 +6,18 @@ import Me from "./components/Me";
 import More from "./components/More";
 import { CV } from "./CV/CV";
 import About from "./components/About";
+import { setMe } from "./redux/me/me.action";
 
-//const { me, education, experience, languages } = CV;
-
-//<button type="button" onclick={()=>setNew('About')}>Info</button>
-//{set === 'About' && <About about={me.aboutMe} /> }
 
 function App() {
     
   const { me, education, experience, languages } = CV;
   const [set, setNew] = useState('');
   
+   useEffect(()=>{
+    setMe(me);
+   },[me]);
+
   return (
     <div className="App">
         <Me me={me}/>

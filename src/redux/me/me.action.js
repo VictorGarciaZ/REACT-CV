@@ -6,4 +6,4 @@ export const setMe = (data) => {
         type: 'SET_ME',
         payload: data,
     })
-}
+};
