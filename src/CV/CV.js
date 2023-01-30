@@ -11,22 +11,27 @@ export const CV = {
     aboutMe: [
         {
           info: "HTML",
+          image:"/assets/logohtml.svg",
           percent: "80%"
         },
         {
           info: "CSS",
+          image:"/assets/logocss.svg",
           percent: "60%"
         },
         {
           info: "JavaScript",
+          image:"/assets/logojavascript.svg",
           percent: "40%"
         },
         {
           info: "NODE",
+          image:"/assets/logonode1.svg",
           percent: "40%"
         },
         {
           info: "REACT",
+          image:"/assets/logoreact.svg",
           percent: "40%"
         },
       ],
