@@ -1,11 +1,12 @@
 import React from 'react'
+import "./More.css"
 
 const More = ({ languages }) => {
   return (
-    <div>
+    <div className="container-more">
       {languages.map((item, index) => {
         return (
-          <div key={index}>
+          <div className="more" key={index}>
             <h3>{item.language}</h3>
             <p>{item.wrlevel}</p>
             <p>{item.university}</p>

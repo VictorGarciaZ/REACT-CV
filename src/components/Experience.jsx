@@ -1,11 +1,12 @@
 import React from 'react';
+import "./Experience.css"
 
 const Experience = ({ experience }) => {
   return (
-    <div>
+    <div className="container-experience">
         {experience.map((item, index) => {
           return (
-            <div key={index}>
+            <div className="experience" key={index}>
               <h3>{item.name}</h3>
               <p>{item.where}</p>
               <p>{item.date}</p>

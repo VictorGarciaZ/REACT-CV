@@ -22,7 +22,7 @@ function App() {
     <div className="App">
         <Me me={me}/>
         <div>
-          <button type="button" className="button" onClick={()=>setNew('About')}>Info</button>
+          <button type="button" className="button" onClick={()=>setNew('About')}>Conocimientos</button>
           <button type="button" className="button" onClick={()=>setNew('Education')}>Educación</button>
           <button type="button" className="button" onClick={()=>setNew('Experience')}>Experiencia laboral</button>
           <button type="button" className="button" onClick={()=>setNew('More')}>Otros datos de interés</button>

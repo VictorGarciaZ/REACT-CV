@@ -1,12 +1,14 @@
 import React from 'react'
+import "./About.css"
 
 const About = ({ aboutMe }) => {
   return (
-    <div>
+    <div className="about-container"> 
         {aboutMe.map((item, index) => {
           return (
             <div key={index}>
-              <p>{item.info}</p>
+              <h3 className="programs">{item.info}</h3>
+              <span className="about">{item.percent}</span>
             </div>
           );
         })}

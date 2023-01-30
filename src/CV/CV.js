@@ -10,27 +10,35 @@ export const CV = {
       gitHub: "https://github.com/VictorGarciaZ",
     aboutMe: [
         {
-          info: "🤖 My ass never a distraction or a hobby, it was a cocoon. I am Iron Man.",
+          info: "HTML",
+          percent: "80%"
         },
         {
-          info: "🔩 CEO of Stark Industries.",
+          info: "CSS",
+          percent: "60%"
         },
         {
-          info: "🕶 Genius, billionaire, playboy, philanthropist.",
+          info: "JavaScript",
+          percent: "40%"
         },
         {
-          info: "🦾 I do have a responsibility to keep my inventions from evil hands – but I have a greater responsibility to oppose that evil any way I can.",
+          info: "NODE",
+          percent: "40%"
+        },
+        {
+          info: "REACT",
+          percent: "40%"
         },
       ],
     },
     education: [
       {
-        name: "Full Stack Developer",
+        name: "Bootcamp: Full Stack Developer",
         date: "2022-2023",
         where: "Upgrade-Hub, Madrid",
       },
       {
-        name: "Master en formación del profesorado, especialidad: Orientación Educativa",
+        name: "Máster en Orientación Educativa",
         date: "2016",
         where: "Universidad de La Laguna",
       },
@@ -46,13 +54,6 @@ export const CV = {
       },
     ],
     experience: [
-      {
-        name: "Camarero",
-        date: "01/08/2022 – 20/10/2022",
-        where: "Hotel Ácora",
-        description:
-          "Encargado de restaurante / bar hotel 4*",
-      },
       {
         name: "Auxiliar administrativo",
         date: "12/06/2022 – 31/08/2022",
@@ -86,14 +87,14 @@ export const CV = {
       language: "Inglés", 
       wrlevel: "Titulación: B1",
       splevel: "B1",
-      date: "2016",
+      date: "",
       university: "Universidad de La Laguna"
 
     },
     {
-      language: "Español", 
-      wrlevel: "Nativo",
-      splevel: "Nativo",
+      language: "Francés", 
+      wrlevel: "Básico",
+      splevel: "Básico",
       
     }],
     habilities: [
