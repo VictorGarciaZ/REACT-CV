@@ -1,3 +1,8 @@
+body{
+  background:#6d7fc7;
+
+
+}
 .App {
   text-align: center;
 }
@@ -41,15 +46,15 @@
   display: inline-block;
   padding: 5px;
   margin: 10px;
-  border-radius: 5px;
-  border-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  border-color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   justify-content: space-around;
-  background-color: rgba(0, 51, 95, 0.241);
+  background-color: #8d9ddd;
 }
 .button:hover {
-  color:rgba(49, 138, 172, 1);
-  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  color:rgba(255, 255, 255);
+  box-shadow: 0 5px 16px rgba(255, 255, 255);
   transition: all 0.2s ease;
 }

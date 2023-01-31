@@ -6,7 +6,7 @@ export const CV = {
       email: "victorgz1990@gmail.com",
       birthDate: "10/05/1990",
       phone: "(+34) 666 666 666",
-      image: "/assets/fotocv.jpeg",
+      image: "/assets/fotoCV3.png",
       gitHub: "https://github.com/VictorGarciaZ",
     aboutMe: [
         {
@@ -22,6 +22,11 @@ export const CV = {
         {
           info: "JavaScript",
           image:"/assets/logojavascript.svg",
+          percent: "40%"
+        },
+        {
+          info: "MongoDB",
+          image:"/assets/logomongodb.svg",
           percent: "40%"
         },
         {

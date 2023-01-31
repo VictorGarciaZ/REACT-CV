@@ -7,32 +7,42 @@ import More from "./components/More";
 import { CV } from "./CV/CV";
 import About from "./components/About";
 import { setMe } from "./redux/me/me.action";
+//import { Route, Routes } from 'react-router';
 
 
 function App() {
-    
+
   const { me, education, experience, languages } = CV;
   const [set, setNew] = useState('');
-  
-   useEffect(()=>{
+
+  useEffect(() => {
     setMe(me);
-   },[me]);
+  }, [me]);
 
   return (
     <div className="App">
-        <Me me={me}/>
-        <div>
-          <button type="button" className="button" onClick={()=>setNew('About')}>Conocimientos</button>
-          <button type="button" className="button" onClick={()=>setNew('Education')}>Educación</button>
-          <button type="button" className="button" onClick={()=>setNew('Experience')}>Experiencia laboral</button>
-          <button type="button" className="button" onClick={()=>setNew('More')}>Otros datos de interés</button>
-        </div>
-        {set === 'About' && <About aboutMe={me.aboutMe} /> }
-        {set === 'Education' && <Education className="education" education={education} /> }
-        {set === 'Experience' && <Experience experience={experience}/> }
-        {set === 'More' && <More languages={languages} /> }
+      <div>
+        <Me me={me} />
+      </div>
+      <div>
+        <button type="button" className="button" onClick={() => setNew('About')}>Conocimientos</button>
+        <button type="button" className="button" onClick={() => setNew('Education')}>Educación</button>
+        <button type="button" className="button" onClick={() => setNew('Experience')}>Experiencia laboral</button>
+        <button type="button" className="button" onClick={() => setNew('More')}>Otros datos de interés</button>
+      </div>
+      {set === 'About' && <About aboutMe={me.aboutMe} />}
+      {set === 'Education' && <Education className="education" education={education} />}
+      {set === 'Experience' && <Experience experience={experience} />}
+      {set === 'More' && <More languages={languages} />}
     </div>
   );
 }
 
 export default App;
+
+/*<Routes>
+          <Route active path="/" element={""} />
+          <Route path="/education" element={<Education className="education" education={education} />} />
+          <Route path="/experience" element={<Experience experience={experience} />} />
+          <Route path="/more" element={<More languages={languages} />} />
+        </Routes>*/
